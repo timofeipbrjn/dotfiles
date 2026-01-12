@@ -1,0 +1,41 @@
+[user]
+	name = timofeipbrjn
+	email = timofeipbrjn@gmail.com
+
+[core]
+    editor = code --wait
+    autocrlf = true
+    # Для Linux/Mac используй: autocrlf = input
+    excludesfile = ~/.gitignore_global
+
+[alias]
+    # Сокращения
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    cm = commit -m
+    aa = add --all
+    
+    # Красивый лог (дерево)
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    
+    # Удобная работа с ветками
+    bd = branch -d
+    main = checkout main
+    
+    # Отмена действий
+    unstage = reset HEAD --
+    last = log -1 HEAD
+
+[color]
+    ui = auto
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[push]
+    autoSetupRemote = true
