@@ -1,6 +1,6 @@
 [user]
 	name = your_name
-	email = exampole@gmail.com
+	email = example@gmail.com
 
 [core]
     editor = code --wait
