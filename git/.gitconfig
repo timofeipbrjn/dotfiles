@@ -4,8 +4,7 @@
 
 [core]
     editor = code --wait
-    autocrlf = true
-    # Для Linux/Mac используй: autocrlf = input
+	autocrlf = true # решает проблему с виндой всл
     excludesfile = ~/.gitignore_global
 
 [alias]
@@ -39,3 +38,5 @@
 
 [push]
     autoSetupRemote = true
+[credential]
+	helper = store
